@@ -1,1 +1,3 @@
-# WebScraping-ETL
+# WebScraping ETL
+
+Arbitrary Publication Webscraping Project
