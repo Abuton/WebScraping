@@ -2,14 +2,19 @@
 
 Arbitrary Publication Webscraping Project
 
-## Link Extractor Design Approach
+## Link Extractor
 
 ### Design Explanation
 
-I used Beautiful Soup Python library to scrape the url page given `http://community.dur.ac.uk/hubert.shum/comp42315/publicationfull_year_characteranimation.htm`. I define 3 python functions to achive this task.
-- get_page_info(url: str = page_url): to get the original page information. This function returns a beautifulSoup Object
-- get_publication_info(class_name: str = "w3-cell-row"): This function get all publication in the current page. It accepts an argument class_name which depicts the div information to get. The function returns a list.
-- get_unique_url_links(class_name: str = "ImgIconPublicationDiv"): This function get the url of each publication by extracting the text attached to the href attribute of the a tag in html. The text is prependded with the default url to make a complete link.
+I used Beautiful Soup Python library to scrape the url page given:
+
+`http://community.dur.ac.uk/hubert.shum/comp42315/publicationfull_year_characteranimation.htm`.
+
+I defined 3 python functions to achive this task.
+
+- `get_page_info(url: str = page_url)`: to get the original page information. This function returns a beautifulSoup Object
+- `get_publication_info(class_name: str = "w3-cell-row")`: This function get all publication in the current page. It accepts an argument class_name which depicts the div information to get. The function returns a list.
+- `get_unique_url_links(class_name: str = "ImgIconPublicationDiv")`: This function get the url of each publication by extracting the text attached to the href attribute of the a tag in html. The text is prependded with the default url to make a complete link.
 
 ## Publication Details
 
