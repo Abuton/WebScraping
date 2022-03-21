@@ -1,6 +1,6 @@
 # WebScraping ETL
 
-Arbitrary Publication Webscraping Project
+Dummy Publication Webscraping Project
 
 ## Link Extractor
 
